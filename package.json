@@ -1,0 +1,22 @@
+{
+  "name": "openweather",
+  "version": "1.0.0",
+  "description": "Take home assesment full stack web developer intern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supersid/openweather.git"
+  },
+  "author": "Siddharth Gulati (sgulati2@stevens.edu)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supersid/openweather/issues"
+  },
+  "homepage": "https://github.com/supersid/openweather#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
