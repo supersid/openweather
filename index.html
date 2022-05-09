@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Weather App</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="header">OpenWeather App</h1>
+    </div>
+    <div class="row">
+      <div id="single" class="column">
+        <h2>Single City Search</h2>
+        <form
+          action="/my-weather-app/single-search"
+          method="post"
+          id="single-city-form"
+        >
+          <label for="city">Enter City</label>
+          <br />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter City Name"
+            required
+          />
+          <br />
+          <span id="reqText"></span>
+          <button type="submit" class="button button2" value="Submit">
+            Search
+          </button>
+        </form>
+        <div id="result1"></div>
+      </div>
+      <!-- List source - https://www.bestcities.org/rankings/worlds-best-cities/ -->
+      <div id="multiple" class="column">
+        <h2>Multiple Cities Search</h2>
+        <form
+          action="/my-weather-app/multiple-search"
+          method="post"
+          id="multi-city-form"
+        >
+          <label for="allCities">Select City</label>
+          <br />
+          <select name="allCities" id="allCities" multiple>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="new york city">New York City</option>
+            <option value="Moscow">Moscow</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Madrid">Madrid</option>
+          </select>
+          <br />
+          <button type="submit" class="button button2" value="Submit">
+            Search
+          </button>
+        </form>
+        <div id="result2"></div>
+      </div>
+    </div>
+    <script src="/public/script.js"></script>
+  </body>
 </html>
