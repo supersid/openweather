@@ -7,7 +7,7 @@ const apiKey = '5597b13382691be880ae2b1eaa316cd3';
  */
 async function getSingleCityWeather(city) {
   const { data } = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`,
   );
   return data;
 }
