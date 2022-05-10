@@ -5,7 +5,8 @@ const port = 3000;
 const host = 'localhost';
 const weather = require('./weather');
 
-// Function to validate if the entered city is valid or not by checking special characters and is of type string
+// Function to validate if the entered city is valid or not
+// Checks for special characters and is of type string
 function validCityName(city) {
   if (typeof city !== 'string' || city.trim().length === 0) {
     return false;
