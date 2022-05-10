@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     camelcase: ['error', { properties: 'never', ignoreDestructuring: true }],
+    'linebreak-style': 0,
   },
 };
