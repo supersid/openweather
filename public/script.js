@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </tbody>
         </table>`;
       } else {
-        innerHTML = singleCityWeatherResponse.message;
+        innerHTML = `<h3>${singleCityWeatherResponse.message}</h3>`;
       }
       document.getElementById('result1').innerHTML = innerHTML;
     });
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (data.status === 200) {
         innerHTML = `<ol>${orderedListData.join('')}</ol>`;
       } else {
-        innerHTML = multiCityWeatherResponse.message;
+        innerHTML = `<h3>${multiCityWeatherResponse.message}</h3>`;
       }
       document.getElementById('result2').innerHTML = innerHTML;
     });
