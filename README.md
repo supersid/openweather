@@ -25,12 +25,12 @@ For development, you will only need Node.js
 
 The main directories are:
 
-| Directories & Files    | Description                                                                                                                      |
+| Directories            | Description                                                                                                                      |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `/public`              | JS file for form submission and stying for the application                                                                       |
-| `/index.html`          | Homepage for the application showing both the forms of weather search                                                            |
-| `/index.js`            | This file contains all the server logic for the application                                                                      |
-| `/weather.js`          | This file contains all the logic to interact with the openweather api                                                            |
+| `/modules`             | This directory contains all weather functions                                                                                    |
+| `/public`              | This directory contains JS file for form submission and style sheet for the application                                          |
+| `/routes`              | This directory contains all the static and dynamic routes for the application                                                    |
+| `/views`               | This directory contains the html files                                                                                           |
 
 In addition to this we also have .eslintrc that holds all the information related to style guide
 
